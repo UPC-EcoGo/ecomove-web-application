@@ -1,0 +1,31 @@
+<div class="bg-background-blue h-fit w-full p-10">
+    <div class="flex justify-center text-center p-28">
+        <h1 class="!text-7xl">NUESTROS VEHICULOS: </h1>
+    </div>
+    <div class="flex md:flex-row flex-col gap-36 justify-center items-center">
+        <a [routerLink]="['/vehicle/scooters']" aria-label="scooters info" >
+            <mat-card class="w-64 !rounded-xl" aria-label="vehicle info card">
+                <img mat-card-image src="" aria-label="scooter image">
+                <mat-card-content class="bg-card-text !rounded-b-xl">
+                    <h1 class="!font-kumbh-sans !font-semibold p-4 align-middle justify-center text-center !text-3xl">Scooter</h1>
+                </mat-card-content>
+            </mat-card>
+        </a>
+        <a [routerLink]="['/vehicle/bicycle']" aria-label="bicycle info" >
+            <mat-card class="w-64 !rounded-xl" aria-label="vehicle info card">
+                <img mat-card-image src="" aria-label="scooter image">
+                <mat-card-content class="bg-card-text !rounded-b-xl">
+                    <h1 class="!font-kumbh-sans !font-semibold p-4 align-middle justify-center text-center !text-3xl ">Bicicleta</h1>
+                </mat-card-content>
+            </mat-card>
+        </a>
+        <a [routerLink]="['/vehicle/others']" aria-label="others vehicles info" >
+            <mat-card class="w-64 !rounded-xl" aria-label="vehicle info card">
+                <img mat-card-image src="" aria-label="scooter image">
+                <mat-card-content class=" bg-card-text !rounded-b-xl">
+                    <h1 class="!font-kumbh-sans !font-semibold p-4 align-middle justify-center text-center !text-3xl">Otros</h1>
+                </mat-card-content>
+            </mat-card>
+        </a>
+    </div>
+</div>
