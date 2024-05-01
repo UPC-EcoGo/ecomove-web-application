@@ -4,12 +4,14 @@
         <div class="bg-background-input w-full p-10 justify-center flex flex-col items-center">
             <form class="flex md:flex-row flex-col gap-5">
                 <mat-form-field appearance="fill">
-                    <mat-label>Fecha de inicio</mat-label>
-                    <input matInput placeholder="dd/mm">
+                    <mat-label>Fecha inicio</mat-label>
+                    <input matInput [matDatepicker]="picker" placeholder="dd/mm/aaaa">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label>Hora de inicio</mat-label>
-                    <input matInput placeholder="dd/mm">
+                    <input matInput placeholder="Ej: 14:30">
                 </mat-form-field>
                 <mat-form-field appearance="fill">
                     <mat-label>Distrito</mat-label>

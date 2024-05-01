@@ -4,11 +4,14 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule} from '@angular/material/button'
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {provideNativeDateAdapter} from '@angular/material/core';
 
 @Component({
   selector: 'app-reservation-page',
   standalone: true,
-  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, ReactiveFormsModule],
+  providers:[provideNativeDateAdapter()],
+  imports: [MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule, ReactiveFormsModule, MatDatepickerModule],
   templateUrl: './reservation-page.component.html',
   styleUrl: './reservation-page.component.css'
 })
