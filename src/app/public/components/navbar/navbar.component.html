@@ -1,11 +1,14 @@
 <mat-toolbar>
-  <mat-toolbar-row class="bg-nav-blue gap-6 flex text-white">
+  <mat-toolbar-row class="bg-primary-800 flex justify-between text-white">
     <span>Ecomove</span>
-    <span class="flex-1"></span>
-    <a [routerLink]="['/home']"><span class="">Inicio</span></a>
-    <a [routerLink]="['/vehicles']"><span>Vehiculos</span></a>
-    <a [routerLink]="['/memberships']"><span>Suscripciones</span></a>
-    <a [routerLink]="['/reservation']"><span>Reservar</span></a>
-    <a [routerLink]="['/profile']"><mat-icon class="text-4xl !w-10 !h-10 align-middle" fontIcon="account_circle"></mat-icon></a>
+    <div class="flex gap-6 items-center">
+      <a routerLink="/home" class="hidden sm:block"><span class="">Inicio</span></a>
+      <a routerLink="/vehicles" class="hidden sm:block"><span>Vehiculos</span></a>
+      <a routerLink="/memberships" class="hidden sm:block"><span>Suscripciones</span></a>
+      <a routerLink="/reservation" class="hidden sm:block"><span>Reservar</span></a>
+      <a routerLink="/settings">
+        <mat-icon class="text-4xl !w-10 !h-10 align-middle" fontIcon="account_circle"></mat-icon>
+      </a>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
