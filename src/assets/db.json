@@ -1,0 +1,822 @@
+{
+    "user": [
+      {
+        "id": "1",
+        "username": "johndoe",
+        "email": "john.doe@mail.com",
+        "password": "Doe@1234",
+        "firstname": "John",
+        "lastname": "Doe",
+        "createdAt": "2024-05-01T08:00:00",
+        "updatedAt": "2024-05-01T08:00:00"
+      },
+      {
+        "id": "2",
+        "username": "alicesmith",
+        "email": "alice.smith@mail.com",
+        "password": "Smith4567!",
+        "firstname": "Alice",
+        "lastname": "Smith",
+        "createdAt": "2024-05-01T12:30:00",
+        "updatedAt": "2024-05-01T12:30:00"
+      },
+      {
+        "id": "3",
+        "username": "davidjohnson",
+        "email": "david.johnson@mail.com",
+        "password": "Johnson@4321",
+        "firstname": "David",
+        "lastname": "Johnson",
+        "createdAt": "2024-05-02T10:45:00",
+        "updatedAt": "2024-05-02T10:45:00"
+      },
+      {
+        "id": "4",
+        "username": "emilybrown",
+        "email": "emily.brown@mail.com",
+        "password": "Brownie789!",
+        "firstname": "Emily",
+        "lastname": "Brown",
+        "createdAt": "2024-05-02T15:20:00",
+        "updatedAt": "2024-05-02T15:20:00"
+      },
+      {
+        "id": "5",
+        "username": "michaelwilson",
+        "email": "michael.wilson@mail.com",
+        "password": "Wilson@2024",
+        "firstname": "Michael",
+        "lastname": "Wilson",
+        "createdAt": "2024-05-03T09:10:00",
+        "updatedAt": "2024-05-03T09:10:00"
+      },
+      {
+        "id": "6",
+        "username": "sophiale",
+        "email": "sophia.lee@mail.com",
+        "password": "LeeSoph@123",
+        "firstname": "Sophia",
+        "lastname": "Lee",
+        "createdAt": "2024-05-03T14:55:00",
+        "updatedAt": "2024-05-03T14:55:00"
+      },
+      {
+        "id": "7",
+        "username": "danielgarcia",
+        "email": "daniel.garcia@mail.com",
+        "password": "GarciaDaniel$",
+        "firstname": "Daniel",
+        "lastname": "Garcia",
+        "createdAt": "2024-05-04T11:30:00",
+        "updatedAt": "2024-05-04T11:30:00"
+      },
+      {
+        "id": "8",
+        "username": "oliviamart",
+        "email": "olivia.martinez@mail.com",
+        "password": "MartinezOlivia1!",
+        "firstname": "Olivia",
+        "lastname": "Martinez",
+        "createdAt": "2024-05-05T08:40:00",
+        "updatedAt": "2024-05-05T08:40:00"
+      },
+      {
+        "id": "9",
+        "username": "matthewr",
+        "email": "matthew.rodriguez@mail.com",
+        "password": "RodriguezM@123",
+        "firstname": "Matthew",
+        "lastname": "Rodriguez",
+        "createdAt": "2024-05-06T12:15:00",
+        "updatedAt": "2024-05-06T12:15:00"
+      },
+      {
+        "id": "10",
+        "username": "emmalopez",
+        "email": "emma.lopez@mail.com",
+        "password": "LopezEmma12#",
+        "firstname": "Emma",
+        "lastname": "Lopez",
+        "createdAt": "2024-05-06T17:20:00",
+        "updatedAt": "2024-05-06T17:20:00"
+      },
+      {
+        "id": "11",
+        "username": "williamh",
+        "email": "william.hernandez@mail.com",
+        "password": "HernandezWill$",
+        "firstname": "William",
+        "lastname": "Hernandez",
+        "createdAt": "2024-05-07T10:00:00",
+        "updatedAt": "2024-05-07T10:00:00"
+      },
+      {
+        "id": "12",
+        "username": "isabellag",
+        "email": "isabella.gonzalez@mail.com",
+        "password": "GonzalezI@567",
+        "firstname": "Isabella",
+        "lastname": "Gonzalez",
+        "createdAt": "2024-05-07T15:45:00",
+        "updatedAt": "2024-05-07T15:45:00"
+      },
+      {
+        "id": "13",
+        "username": "jamesp",
+        "email": "james.perez@mail.com",
+        "password": "PerezJames@8",
+        "firstname": "James",
+        "lastname": "Perez",
+        "createdAt": "2024-05-08T09:30:00",
+        "updatedAt": "2024-05-08T09:30:00"
+      },
+      {
+        "id": "14",
+        "username": "avasanchez",
+        "email": "ava.sanchez@mail.com",
+        "password": "SanchezAva123!",
+        "firstname": "Ava",
+        "lastname": "Sanchez",
+        "createdAt": "2024-05-08T14:25:00",
+        "updatedAt": "2024-05-08T14:25:00"
+      },
+      {
+        "id": "15",
+        "username": "benjamint",
+        "email": "benjamin.torres@mail.com",
+        "password": "TorresBenj@456",
+        "firstname": "Benjamin",
+        "lastname": "Torres",
+        "createdAt": "2024-05-09T11:10:00",
+        "updatedAt": "2024-05-09T11:10:00"
+      },
+      {
+        "id": "16",
+        "username": "miaramirez",
+        "email": "mia.ramirez@mail.com",
+        "password": "RamirezMia789$",
+        "firstname": "Mia",
+        "lastname": "Ramirez",
+        "createdAt": "2024-05-09T16:55:00",
+        "updatedAt": "2024-05-09T16:55:00"
+      },
+      {
+        "id": "17",
+        "username": "loganrivera",
+        "email": "logan.rivera@mail.com",
+        "password": "RiveraLogan@567",
+        "firstname": "Logan",
+        "lastname": "Rivera",
+        "createdAt": "2024-05-10T09:40:00",
+        "updatedAt": "2024-05-10T09:40:00"
+      },
+      {
+        "id": "18",
+        "username": "hannahd",
+        "email": "hannah.davis@mail.com",
+        "password": "DavisHannah!123",
+        "firstname": "Hannah",
+        "lastname": "Davis",
+        "createdAt": "2024-05-10T14:35:00",
+        "updatedAt": "2024-05-10T14:35:00"
+      },
+      {
+        "id": "19",
+        "username": "jackwright",
+        "email": "jack.wright@mail.com",
+        "password": "WrightJack@2024",
+        "firstname": "Jack",
+        "lastname": "Wright",
+        "createdAt": "2024-05-11T11:20:00",
+        "updatedAt": "2024-05-11T11:20:00"
+      },
+      {
+        "id": "20",
+        "username": "oliviathomas",
+        "email": "olivia.thomas@mail.com",
+        "password": "ThomasOlivia$",
+        "firstname": "Olivia",
+        "lastname": "Thomas",
+        "createdAt": "2024-05-11T16:15:00",
+        "updatedAt": "2024-05-11T16:15:00"
+      }
+    ]
+  ,
+    "ecovehicles": [
+      { "id": "1", "type": "scooter electrico", "model": "Xiaomi Mi Electric Scooter", "batteryLevel": 79, "location": "Salaverry, Lima, Peru", "status": "disponible" },
+      { "id": "2", "type": "bicicleta", "model": "Specialized Turbo Vado SL", "batteryLevel": 85, "location": "Salaverry, Lima, Peru", "status": "disponible" },
+      { "id": "3", "type": "scooter electrico", "model": "Segway Ninebot Max", "batteryLevel": 92, "location": "San Isidro, Lima, Peru", "status": "disponible" },
+      { "id": "4", "type": "bicicleta", "model": "Trek Verve+", "batteryLevel": 64, "location": "Pueblo Libre, Lima, Peru", "status": "disponible" },
+      { "id": "5", "type": "scooter electrico", "model": "Boosted Rev", "batteryLevel": 71, "location": "Magdalena del Mar, Lima, Peru", "status": "disponible" },
+      { "id": "6", "type": "bicicleta", "model": "Giant Explore E+ 3", "batteryLevel": 83, "location": "San Miguel, Lima, Peru", "status": "disponible" },
+      { "id": "7", "type": "scooter electrico", "model": "Unagi Model One", "batteryLevel": 76, "location": "Pueblo Libre, Lima, Peru", "status": "no disponible" },
+      { "id": "8", "type": "bicicleta", "model": "Cannondale Quick Neo", "batteryLevel": 98, "location": "San Isidro, Lima, Peru", "status": "no disponible" },
+      { "id": "9", "type": "scooter electrico", "model": "GoTrax GXL V2", "batteryLevel": 60, "location": "Magdalena del Mar, Lima, Peru", "status": "no disponible" },
+      { "id": "10", "type": "bicicleta", "model": "Raleigh Detour IE Step-Through", "batteryLevel": 73, "location": "Jesús María, Lima, Peru", "status": "disponible" },
+      { "id": "11", "type": "scooter electrico", "model": "Xiaomi Mi Electric Scooter Pro 2", "batteryLevel": 68, "location": "Salaverry, Lima, Peru", "status": "disponible" },
+      { "id": "12", "type": "bicicleta", "model": "Tern Vektron S10", "batteryLevel": 90, "location": "Salaverry, Lima, Peru", "status": "no disponible" },
+      { "id": "13", "type": "scooter electrico", "model": "Razor E300", "batteryLevel": 79, "location": "Magdalena del Mar, Lima, Peru", "status": "no disponible" },
+      { "id": "14", "type": "bicicleta", "model": "Electra Townie Go! 7D Step-Over", "batteryLevel": 67, "location": "San Isidro, Lima, Peru", "status": "disponible" },
+      { "id": "15", "type": "scooter electrico", "model": "Apollo Light", "batteryLevel": 88, "location": "Pueblo Libre, Lima, Peru", "status": "disponible" },
+      { "id": "16", "type": "bicicleta", "model": "Cube Touring Hybrid One 400", "batteryLevel": 74, "location": "Magdalena del Mar, Lima, Peru", "status": "no disponible" },
+      { "id": "17", "type": "scooter electrico", "model": "Glion Dolly", "batteryLevel": 95, "location": "San Isidro, Lima, Peru", "status": "disponible" },
+      { "id": "18", "type": "bicicleta", "model": "Rad Power Bikes RadCity Step-Thru 3", "batteryLevel": 63, "location": "San Isidro, Lima, Peru", "status": "disponible" },
+      { "id": "19", "type": "scooter electrico", "model": "FluidFreeRide Horizon", "batteryLevel": 80, "location": "Magdalena del Mar, Lima, Peru", "status": "no disponible" },
+      { "id": "20", "type": "bicicleta", "model": "Orbea Gain M30", "batteryLevel": 76, "location": "Salaverry, Lima, Peru", "status": "disponible" }
+    ],
+  
+    "reservation":[
+      {
+        "id": "1",
+        "userID": "1",
+        "startTime": "2024-05-01T09:00:00",
+        "endTime": "2024-05-01T10:00:00"
+      },
+      {
+        "id": "2",
+        "userID": "2",
+        "startTime": "2024-05-02T10:30:00",
+        "endTime": "2024-05-02T11:30:00"
+      },
+      {
+        "id": "3",
+        "userID": "3",
+        "startTime": "2024-05-03T12:00:00",
+        "endTime": "2024-05-03T13:00:00"
+      },
+      {
+        "id": "4",
+        "userID": "4",
+        "startTime": "2024-05-04T13:30:00",
+        "endTime": "2024-05-04T14:30:00"
+      },
+      {
+        "id": "5",
+        "userID": "5",
+        "startTime": "2024-05-05T15:00:00",
+        "endTime": "2024-05-05T16:00:00"
+      },
+      {
+        "id": "6",
+        "userID": "6",
+        "startTime": "2024-05-06T16:30:00",
+        "endTime": "2024-05-06T17:30:00"
+      },
+      {
+        "id": "7",
+        "userID": "7",
+        "startTime": "2024-05-07T09:00:00",
+        "endTime": "2024-05-07T10:00:00"
+      },
+      {
+        "id": "8",
+        "userID": "8",
+        "startTime": "2024-05-08T10:30:00",
+        "endTime": "2024-05-08T11:30:00"
+      },
+      {
+        "id": "9",
+        "userID": "9",
+        "startTime": "2024-05-09T12:00:00",
+        "endTime": "2024-05-09T13:00:00"
+      },
+      {
+        "id": "10",
+        "userID": "10",
+        "startTime": "2024-05-10T13:30:00",
+        "endTime": "2024-05-10T14:30:00"
+      },
+      {
+        "id": "11",
+        "userID": "11",
+        "startTime": "2024-05-11T15:00:00",
+        "endTime": "2024-05-11T16:00:00"
+      },
+      {
+        "id": "12",
+        "userID": "12",
+        "startTime": "2024-05-12T16:30:00",
+        "endTime": "2024-05-12T17:30:00"
+      },
+      {
+        "id": "13",
+        "userID": "13",
+        "startTime": "2024-05-13T09:00:00",
+        "endTime": "2024-05-13T10:00:00"
+      },
+      {
+        "id": "14",
+        "userID": "14",
+        "startTime": "2024-05-14T10:30:00",
+        "endTime": "2024-05-14T11:30:00"
+      },
+      {
+        "id": "15",
+        "userID": "15",
+        "startTime": "2024-05-15T12:00:00",
+        "endTime": "2024-05-15T13:00:00"
+      },
+      {
+        "id": "16",
+        "userID": "16",
+        "startTime": "2024-05-16T13:30:00",
+        "endTime": "2024-05-16T14:30:00"
+      },
+      {
+        "id": "17",
+        "userID": "17",
+        "startTime": "2024-05-17T15:00:00",
+        "endTime": "2024-05-17T16:00:00"
+      },
+      {
+        "id": "18",
+        "userID": "18",
+        "startTime": "2024-05-18T16:30:00",
+        "endTime": "2024-05-18T17:30:00"
+      },
+      {
+        "id": "19",
+        "userID": "19",
+        "startTime": "2024-05-19T09:00:00",
+        "endTime": "2024-05-19T10:00:00"
+      },
+      {
+        "id": "20",
+        "userID": "20",
+        "startTime": "2024-05-20T10:30:00",
+        "endTime": "2024-05-20T11:30:00"
+      }
+    ],
+    "booking": [
+      {
+        "id": "1",
+        "userID": "1",
+        "vehicleID": "1",
+        "startTime": "2024-05-01T09:00:00",
+        "endTime": "2024-05-01T10:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "2",
+        "userID": "2",
+        "vehicleID": "2",
+        "startTime": "2024-05-02T10:30:00",
+        "endTime": "2024-05-02T11:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "3",
+        "userID": "3",
+        "vehicleID": "3",
+        "startTime": "2024-05-03T12:00:00",
+        "endTime": "2024-05-03T13:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "4",
+        "userID": "4",
+        "vehicleID": "4",
+        "startTime": "2024-05-04T13:30:00",
+        "endTime": "2024-05-04T14:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "5",
+        "userID": "5",
+        "vehicleID": "5",
+        "startTime": "2024-05-05T15:00:00",
+        "endTime": "2024-05-05T16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "6",
+        "userID": "6",
+        "vehicleID": "6",
+        "startTime": "2024-05-06T16:30:00",
+        "endTime": "2024-05-06T17:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "7",
+        "userID": "7",
+        "vehicleID": "7",
+        "startTime": "2024-05-07T09:00:00",
+        "endTime": "2024-05-07T10:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "8",
+        "userID": "8",
+        "vehicleID": "8",
+        "startTime": "2024-05-08T10:30:00",
+        "endTime": "2024-05-08T11:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "9",
+        "userID": "9",
+        "vehicleID": "9",
+        "startTime": "2024-05-09T12:00:00",
+        "endTime": "2024-05-09T13:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "10",
+        "userID": "10",
+        "vehicleID": "10",
+        "startTime": "2024-05-10T13:30:00",
+        "endTime": "2024-05-10T14:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "11",
+        "userID": "11",
+        "vehicleID": "11",
+        "startTime": "2024-05-11T15:00:00",
+        "endTime": "2024-05-11T16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "12",
+        "userID": "12",
+        "vehicleID": "12",
+        "startTime": "2024-05-12T16:30:00",
+        "endTime": "2024-05-12T17:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "13",
+        "userID": "13",
+        "vehicleID": "13",
+        "startTime": "2024-05-13T09:00:00",
+        "endTime": "2024-05-13T10:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "14",
+        "userID": "14",
+        "vehicleID": "14",
+        "startTime": "2024-05-14T10:30:00",
+        "endTime": "2024-05-14T11:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "15",
+        "userID": "15",
+        "vehicleID": "15",
+        "startTime": "2024-05-15T12:00:00",
+        "endTime": "2024-05-15T13:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "16",
+        "userID": "16",
+        "vehicleID": "16",
+        "startTime": "2024-05-16T13:30:00",
+        "endTime": "2024-05-16T14:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "17",
+        "userID": "17",
+        "vehicleID": "17",
+        "startTime": "2024-05-17T15:00:00",
+        "endTime": "2024-05-17T16:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "18",
+        "userID": "18",
+        "vehicleID": "18",
+        "startTime": "2024-05-18T16:30:00",
+        "endTime": "2024-05-18T17:30:00",
+        "status": "pending"
+      },
+      {
+        "id": "19",
+        "userID": "19",
+        "vehicleID": "19",
+        "startTime": "2024-05-19T09:00:00",
+        "endTime": "2024-05-19T10:00:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "20",
+        "userID": "20",
+        "vehicleID": "20",
+        "startTime": "2024-05-20T10:30:00",
+        "endTime": "2024-05-20T11:30:00",
+        "status": "pending"
+      }
+    ],
+  
+    "transaction": [
+      {
+        "id": "1",
+        "userID": "1",
+        "amount": 125.75,
+        "date": "2024-05-01T09:00:00"
+      },
+      {
+        "id": "2",
+        "userID": "2",
+        "amount": 200.50,
+        "date": "2024-05-02T10:30:00"
+      },
+      {
+        "id": "3",
+        "userID": "3",
+        "amount": 75.25,
+        "date": "2024-05-03T12:00:00"
+      },
+      {
+        "id": "4",
+        "userID": "4",
+        "amount": 150.00,
+        "date": "2024-05-04T13:30:00"
+      },
+      {
+        "id": "5",
+        "userID": "5",
+        "amount": 90.80,
+        "date": "2024-05-05T15:00:00"
+      },
+      {
+        "id": "6",
+        "userID": "6",
+        "amount": 300.00,
+        "date": "2024-05-06T16:30:00"
+      },
+      {
+        "id": "7",
+        "userID": "7",
+        "amount": 50.00,
+        "date": "2024-05-07T09:00:00"
+      },
+      {
+        "id": "8",
+        "userID": "8",
+        "amount": 180.25,
+        "date": "2024-05-08T10:30:00"
+      },
+      {
+        "id": "9",
+        "userID": "9",
+        "amount": 120.60,
+        "date": "2024-05-09T12:00:00"
+      },
+      {
+        "id": "10",
+        "userID": "10",
+        "amount": 250.40,
+        "date": "2024-05-10T13:30:00"
+      },
+      {
+        "id": "11",
+        "userID": "11",
+        "amount": 80.00,
+        "date": "2024-05-11T15:00:00"
+      },
+      {
+        "id": "12",
+        "userID": "12",
+        "amount": 175.30,
+        "date": "2024-05-12T16:30:00"
+      },
+      {
+        "id": "13",
+        "userID": "13",
+        "amount": 100.20,
+        "date": "2024-05-13T09:00:00"
+      },
+      {
+        "id": "14",
+        "userID": "14",
+        "amount": 150.75,
+        "date": "2024-05-14T10:30:00"
+      },
+      {
+        "id": "15",
+        "userID": "15",
+        "amount": 210.90,
+        "date": "2024-05-15T12:00:00"
+      },
+      {
+        "id": "16",
+        "userID": "16",
+        "amount": 95.50,
+        "date": "2024-05-16T13:30:00"
+      },
+      {
+        "id": "17",
+        "userID": "17",
+        "amount": 180.20,
+        "date": "2024-05-17T15:00:00"
+      },
+      {
+        "id": "18",
+        "userID": "18",
+        "amount": 120.75,
+        "date": "2024-05-18T16:30:00"
+      },
+      {
+        "id": "19",
+        "userID": "19",
+        "amount": 160.00,
+        "date": "2024-05-19T09:00:00"
+      },
+      {
+        "id": "20",
+        "userID": "20",
+        "amount": 300.50,
+        "date": "2024-05-20T10:30:00"
+      }
+    ],
+  
+    "ticket":[
+      [
+        {
+          "id": "1",
+          "title": "Problema con la reserva de scooter eléctrico",
+          "description": "Intenté reservar un scooter eléctrico pero la aplicación no lo permite, ¿pueden ayudarme?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "3",
+          "userId": "1"
+        },
+        {
+          "id": "2",
+          "title": "Consulta sobre tarifas de alquiler de bicicletas eléctricas",
+          "description": "¿Cuáles son las tarifas por hora de alquiler de bicicletas eléctricas en su servicio?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "5",
+          "userId": "2"
+        },
+        {
+          "id": "3",
+          "title": "Problema con el proceso de devolución de scooter eléctrico",
+          "description": "No puedo completar el proceso de devolución del scooter eléctrico, ¿qué debo hacer?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "4",
+          "userId": "3"
+        },
+        {
+          "id": "4",
+          "title": "Reporte de bicicleta eléctrica con falla",
+          "description": "La bicicleta eléctrica que alquilé tiene una falla en el sistema de frenos, ¿cómo puedo proceder?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "6",
+          "userId": "4"
+        },
+        {
+          "id": "5",
+          "title": "Solicitud de reembolso por alquiler de scooter eléctrico no utilizado",
+          "description": "Alquilé un scooter eléctrico pero no pude usarlo debido a un problema técnico, ¿puedo obtener un reembolso?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "7",
+          "userId": "5"
+        },
+        {
+          "id": "6",
+          "title": "Consulta sobre puntos de recogida de bicicletas eléctricas",
+          "description": "¿Dónde puedo encontrar los puntos de recogida más cercanos para alquilar una bicicleta eléctrica?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "8",
+          "userId": "6"
+        },
+        {
+          "id": "7",
+          "title": "Problema de navegación en la app de alquiler de scooters eléctricos",
+          "description": "La aplicación de alquiler de scooters eléctricos no muestra los puntos de recogida en el mapa, ¿qué puedo hacer?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "9",
+          "userId": "7"
+        },
+        {
+          "id": "8",
+          "title": "Consulta sobre seguro para alquiler de bicicletas eléctricas",
+          "description": "¿El servicio de alquiler de bicicletas eléctricas incluye seguro en caso de accidente?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "10",
+          "userId": "8"
+        },
+        {
+          "id": "9",
+          "title": "Solicitud de cambio de bicicleta eléctrica con problemas técnicos",
+          "description": "La bicicleta eléctrica que alquilé tiene problemas técnicos, ¿puedo cambiarla por otra?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "11",
+          "userId": "9"
+        },
+        {
+          "id": "10",
+          "title": "Problema con el proceso de alquiler de bicicleta eléctrica",
+          "description": "No puedo completar el proceso de alquiler de una bicicleta eléctrica, ¿pueden ayudarme?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "12",
+          "userId": "10"
+        },
+        {
+          "id": "11",
+          "title": "Consulta sobre puntos de recogida de scooters eléctricos",
+          "description": "¿Cuáles son las ubicaciones de recogida de scooters eléctricos en el distrito de Miraflores?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "13",
+          "userId": "11"
+        },
+        {
+          "id": "12",
+          "title": "Problema de batería descargada en scooter eléctrico",
+          "description": "La batería de mi scooter eléctrico parece estar descargada, ¿cómo puedo cambiarlo por uno con carga?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "14",
+          "userId": "12"
+        },
+        {
+          "id": "13",
+          "title": "Consulta sobre restricciones de edad para alquilar bicicletas eléctricas",
+          "description": "¿Hay restricciones de edad para alquilar bicicletas eléctricas en su servicio?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "15",
+          "userId": "13"
+        },
+        {
+          "id": "14",
+          "title": "Reporte de vandalismo en estación de recogida de scooters eléctricos",
+          "description": "La estación de recogida de scooters eléctricos en la Av. Larco ha sido vandalizada, ¿pueden arreglarlo?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "16",
+          "userId": "14"
+        },
+        {
+          "id": "15",
+          "title": "Solicitud de extensión de tiempo de alquiler de bicicleta eléctrica",
+          "description": "Necesito extender el tiempo de alquiler de la bicicleta eléctrica que renté, ¿es posible?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "17",
+          "userId": "15"
+        },
+        {
+          "id": "16",
+          "title": "Consulta sobre disponibilidad de scooters eléctricos en estación cercana",
+          "description": "¿Hay scooters eléctricos disponibles en la estación de la Av. Benavides?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "18",
+          "userId": "16"
+        },
+        {
+          "id": "17",
+          "title": "Problema de frenos en bicicleta eléctrica alquilada",
+          "description": "Los frenos de la bicicleta eléctrica que renté no funcionan correctamente, ¿pueden arreglarlo?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "19",
+          "userId": "17"
+        },
+        {
+          "id": "18",
+          "title": "Consulta sobre políticas de cancelación de reserva de scooter eléctrico",
+          "description": "¿Cuál es la política de cancelación de reserva de scooters eléctricos en su servicio?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "20",
+          "userId": "18"
+        },
+        {
+          "id": "19",
+          "title": "Solicitud de ayuda con la app de alquiler de bicicletas eléctricas",
+          "description": "No puedo desbloquear una bicicleta eléctrica a través de la aplicación, ¿pueden ayudarme?",
+          "category": "Alquiler de Bicicletas",
+          "status": "Abierto",
+          "assignedId": "1",
+          "userId": "19"
+        },
+        {
+          "id": "20",
+          "title": "Problema de carga en scooter eléctrico",
+          "description": "Mi scooter eléctrico no carga correctamente, ¿pueden ayudarme?",
+          "category": "Alquiler de Scooters",
+          "status": "Abierto",
+          "assignedId": "2",
+          "userId": "20"
+        }
+      ]
+  
+    ]
+  }
+  
