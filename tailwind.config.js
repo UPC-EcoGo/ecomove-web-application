@@ -16,6 +16,9 @@ module.exports = {
           700: '#71b6d1',
           800: '#55889d'
         },
+      },
+      fontFamily:{
+        'kumbh-sans': 'Kumbh Sans'
       }
     },
   },
