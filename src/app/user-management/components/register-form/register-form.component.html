@@ -1,0 +1,80 @@
+<form class="flex flex-col justify-center items-center px-5 gap-5">
+  <div class="grid md:grid-cols-2 gap-5 w-4/5 md:w-2/3">
+    <mat-form-field>
+      <mat-label class="text-black">Nombres</mat-label>
+      <input matInput
+            placeholder="Nombres"
+            [formControl]="names"
+            (blur)="updateNamesErrorMessage()"
+            required
+            class="border border-solid border-black"
+      >
+      @if (names.invalid) {
+        <mat-error>{{namesErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Apellidos</mat-label>
+      <input matInput
+            placeholder="Apellidos"
+            [formControl]="lastNames"
+            (blur)="updateLastNamesErrorMessage()"
+            required>
+      @if (lastNames.invalid) {
+        <mat-error>{{lastNamesErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Nombre de usuario</mat-label>
+      <input matInput
+            placeholder="Nombre de usuario"
+            [formControl]="username"
+            (blur)="updateUsernameErrorMessage()"
+            required>
+      @if (username.invalid) {
+        <mat-error>{{usernameErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Correo electrónico</mat-label>
+      <input matInput
+            placeholder="nombre@email.com"
+            [formControl]="email"
+            (blur)="updateEmailErrorMessage()"
+            required>
+      @if (email.invalid) {
+        <mat-error>{{emailErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Contraseña</mat-label>
+      <input matInput
+            type="password"
+            placeholder="Contraseña"
+            [formControl]="password"
+            (blur)="updatePasswordErrorMessage()"
+            required>
+      @if (password.invalid) {
+        <mat-error>{{passwordErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Confirma tu contraseña</mat-label>
+      <input matInput
+            type="password"
+            placeholder="Contraseña"
+            [formControl]="checkPassword"
+            (blur)="updateCheckPasswordErrorMessage()"
+            required>
+      @if (checkPassword.invalid) {
+        <mat-error>{{checkPasswordErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <button class="bg-primary-800 w-32 px-5 py-2 text-white text-md font-medium rounded-lg">Registrarme</button>
+</form>
