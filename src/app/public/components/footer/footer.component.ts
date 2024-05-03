@@ -18,10 +18,10 @@ import {DomSanitizer} from "@angular/platform-browser";
 export class FooterComponent {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIconLiteral('facebookIcon', sanitizer.bypassSecurityTrustHtml(FACEBOOK_ICON)),
-      iconRegistry.addSvgIconLiteral('instagramIcon', sanitizer.bypassSecurityTrustHtml(INSTAGRAM_ICON)),
-      iconRegistry.addSvgIconLiteral('twitterIcon', sanitizer.bypassSecurityTrustHtml(TWITTER_ICON)),
-      iconRegistry.addSvgIconLiteral('youtubeIcon', sanitizer.bypassSecurityTrustHtml(YOUTUBE_ICON)),
-      iconRegistry.addSvgIconLiteral('redditIcon', sanitizer.bypassSecurityTrustHtml(REDDIT_ICON))
+    iconRegistry.addSvgIconLiteral('instagramIcon', sanitizer.bypassSecurityTrustHtml(INSTAGRAM_ICON)),
+    iconRegistry.addSvgIconLiteral('twitterIcon', sanitizer.bypassSecurityTrustHtml(TWITTER_ICON)),
+    iconRegistry.addSvgIconLiteral('youtubeIcon', sanitizer.bypassSecurityTrustHtml(YOUTUBE_ICON)),
+    iconRegistry.addSvgIconLiteral('redditIcon', sanitizer.bypassSecurityTrustHtml(REDDIT_ICON))
   }
 
 }
