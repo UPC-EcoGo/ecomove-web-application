@@ -1,7 +1,14 @@
 <mat-toolbar>
-  <mat-toolbar-row>
-    <span>EcoMove</span>
-    <img src='favicon.ico' alt='pokedex' width='40' height='40'>
-    <mat-icon aria-hidden='false' aria-label='Example user verified icon'>verified_user</mat-icon>
+  <mat-toolbar-row class="bg-primary-800 flex justify-between text-white">
+    <span>Ecomove</span>
+    <div class="flex gap-6 items-center">
+      <a routerLink="/home" class="hidden sm:block"><span class="">Inicio</span></a>
+      <a routerLink="/vehicles" class="hidden sm:block"><span>Vehiculos</span></a>
+      <a routerLink="/memberships" class="hidden sm:block"><span>Suscripciones</span></a>
+      <a routerLink="/reservation" class="hidden sm:block"><span>Reservar</span></a>
+      <a routerLink="/settings">
+        <mat-icon class="text-4xl !w-10 !h-10 align-middle" fontIcon="account_circle"></mat-icon>
+      </a>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
