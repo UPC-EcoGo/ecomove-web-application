@@ -1,0 +1,29 @@
+<form class="flex flex-col justify-center items-center px-5 gap-5">
+  <div class="grid grid-cols-1 gap-5 w-2/5">
+    <mat-form-field>
+      <mat-label class="text-black">Nombre de usuario</mat-label>
+      <input matInput
+            placeholder="Nombre de usuario"
+            [formControl]="username"
+            (blur)="updateUsernameErrorMessage()"
+            required>
+      @if (username.invalid) {
+        <mat-error>{{usernameErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label class="text-black">Contraseña</mat-label>
+      <input matInput
+            type="password"
+            placeholder="Contraseña"
+            [formControl]="password"
+            (blur)="updatePasswordErrorMessage()"
+            required>
+      @if (password.invalid) {
+        <mat-error>{{passwordErrorMessage}}</mat-error>
+      }
+    </mat-form-field>
+  </div>
+  <button class="bg-primary-800 w-32 px-5 py-2 text-white text-md font-medium rounded-lg" (click)="logIn()">Iniciar sesión</button>
+</form>
