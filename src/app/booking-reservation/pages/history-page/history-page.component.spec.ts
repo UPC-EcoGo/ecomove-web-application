@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AlertsComponent } from './alerts.component';
+import { HistoryPageComponent } from './history-page.component';
 
-describe('AlertsComponent', () => {
-  let component: AlertsComponent;
-  let fixture: ComponentFixture<AlertsComponent>;
+describe('HistoryPageComponent', () => {
+  let component: HistoryPageComponent;
+  let fixture: ComponentFixture<HistoryPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AlertsComponent]
+      imports: [HistoryPageComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AlertsComponent);
+    fixture = TestBed.createComponent(HistoryPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

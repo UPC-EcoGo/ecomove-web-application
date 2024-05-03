@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<main class="bg-primary-200 p-20 flex flex-col items-center gap-20">
+  <p class="text-4xl text-center  font-bold uppercase text-balance md:text-5xl">Introduce el código para poder usar el vehículo</p>
+  <div aria-label="vehicle info"  class="w-80 h-[390px]">
+    <mat-card class="w-full h-full !rounded-xl" aria-label="vehicle info card">
+        <img mat-card-image src="{{vehicle.imageURL}}" aria-label="scooter image" class="h-80">
+        <mat-card-content class="bg-primary-500 !rounded-b-xl object-cover w-full !flex justify-center">
+            <span class="!font-kumbh-sans !font-semibold p-4 justify-center items-center text-center !text-xl w-full">{{vehicle.model}}</span>
+        </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="w-full justify-center flex ">
+    <div class ="bg-primary-400  flex justify-center items-center rounded-lg border-black border-4 max-w-[70%] md:max-w-[25%]">
+      <span class="flex text-xl md:text-4xl  px-8 font-bold">#{{randomNumber}}</span>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <button mat-flat-button class="!bg-primary-800 !text-white" (click)="getNumber()">Volver a generar</button>
+  </div>
+</main>
+<app-footer></app-footer>
