@@ -5,11 +5,12 @@ import { ReservationPageComponent } from './booking-reservation/components/reser
 import {RentVehicleComponent} from "./booking-reservation/components/rent-vehicle/rent-vehicle.component";
 import { ConfirmationReservationComponent } from './booking-reservation/components/confirmation-reservation/confirmation-reservation.component';
 import {SupportComponent} from "./booking-reservation/components/support/support.component";
+import { HistoryComponent } from './booking-reservation/components/history/history.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, ReservationPageComponent, RentVehicleComponent, ConfirmationReservationComponent, SupportComponent],
+  imports: [RouterOutlet, NavbarComponent, ReservationPageComponent, RentVehicleComponent, ConfirmationReservationComponent, SupportComponent, HistoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
