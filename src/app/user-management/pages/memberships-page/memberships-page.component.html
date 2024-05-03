@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<main class="flex flex-col items-center justify-center px-3 py-20 bg-primary-200">
+  <h1 class="!text-3xl !font-semibold md:!text-5xl mb-8">SUSCRIPCIONES</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-lg mt-10 w-[65%]">
+    @for (membership of memberships; track membership) {
+    <div class="flex flex-col items-center">
+      <div class="bg-primary-400 rounded-lg p-8 text-center w-359 h-608 flex flex-col justify-center mb-10 mx-4 gap-5">
+        <h2 class="!text-3xl font-semibold ">{{ membership.name }}</h2>
+        <p class="text-lg text-gray-700">{{membership.description}}</p>
+        <ul class="text-lg <text-gray-700 list-disc list-inside">
+          @for(benefit of membership.benefits; track benefit) {
+            <li>{{benefit}}</li>
+          }
+        </ul>
+        <p class="text-2xl font-medium">Precio: S/.{{membership.price}}</p>
+        <button mat-button></button>
+      </div>
+      <div class="rounded-full py-2 px-4 bg-black text-white text-xl font-medium">
+        {{membership.id}}
+      </div>
+    </div>
+    
+    }
+  </div>
+</main>
+<app-footer></app-footer>
