@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpReviewPageComponent } from './up-review-page.component';
+import { RegisterPageComponent } from './register-page.component';
 
-describe('UpReviewPageComponent', () => {
-  let component: UpReviewPageComponent;
-  let fixture: ComponentFixture<UpReviewPageComponent>;
+describe('RegisterPageComponent', () => {
+  let component: RegisterPageComponent;
+  let fixture: ComponentFixture<RegisterPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UpReviewPageComponent]
+      imports: [RegisterPageComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(UpReviewPageComponent);
+    fixture = TestBed.createComponent(RegisterPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
