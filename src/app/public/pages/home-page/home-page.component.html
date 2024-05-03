@@ -1,0 +1,32 @@
+<div class="h-fit w-full py-10 bg-primary-200 flex flex-col">
+    <div class="w-full bg-primary-400 flex justify-center items-center py-16">
+        <h1 class="md:!text-5xl text-3xl !font-semibold text-center align-middle uppercase !font-kumbh-sans">Mejorando tus rutas</h1>
+    </div>
+    <div class="w-full flex justify-center flex-col items-center py-10">
+        <h1 class="md:!text-3xl !font-semibold text-center align-middle !font-kumbh-sans">Contamos con variedad de vehiculos</h1>
+        <div class=" flex flex-col gap-10 h-fit w-full p-10">
+            <div class="flex md:flex-row flex-col gap-36 justify-center items-center">
+                <a [routerLink]="['/vehicle/scooters']" aria-label="scooters info" >
+                    <mat-card class="w-64 !rounded-xl" aria-label="vehicle info card">
+                        <img mat-card-image src="../../../../assets/images/scooter.jpg" aria-label="scooter image">
+                        <mat-card-content class="bg-primary-500 !rounded-b-xl">
+                            <h1 class="!font-kumbh-sans !font-semibold p-4 align-middle justify-center text-center !text-3xl">Scooter</h1>
+                        </mat-card-content>
+                    </mat-card>
+                </a>
+                <a [routerLink]="['/vehicle/bicycle']" aria-label="bicycle info" >
+                    <mat-card class="w-64 !rounded-xl" aria-label="vehicle info card">
+                        <img mat-card-image src="../../../../assets/images/bicycle.jpg" aria-label="bicycle image">
+                        <mat-card-content class="bg-primary-500 !rounded-b-xl">
+                            <h1 class="!font-kumbh-sans !font-semibold p-4 align-middle justify-center text-center !text-3xl ">Bicicleta</h1>
+                        </mat-card-content>
+                    </mat-card>
+                </a>
+            </div>
+            <div class="flex md:flex-row flex-col gap-16 justify-center">
+                <button mat-button [routerLink]="" class="!bg-primary-800 !text-white !rounded-xl !font-kumbh-sans">Ver vehiculos cercanos</button>
+                <button mat-button [routerLink]="" class="!bg-primary-800 !text-white !rounded-xl !font-kumbh-sans">Reseñas y calificaciones</button>             
+            </div>
+        </div>
+    </div>
+</div>
