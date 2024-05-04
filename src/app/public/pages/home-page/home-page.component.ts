@@ -20,8 +20,23 @@ export class HomePageComponent {
 
   constructor(private vehiclesService: VehiclesService, private router: Router) { }
   ngOnInit(): void {
+    this.checkAuthentication();
+  }
+
+  private checkAuthentication(): void {
+    let user = JSON.parse(localStorage.getItem('user') || '{}');
+    setTimeout(() => {
+    if (user.email) {
+      this.loadVehicles();
+    } else {
+      this.router.navigateByUrl('/login');
+    }
+    }, 1000);
+  }
+  private loadVehicles(): void {
     this.vehiclesService.getVehicles().subscribe((data: any) => {
       this.vehicles = data.slice(0, 8);
     });
   }
+
 }

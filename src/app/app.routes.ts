@@ -10,6 +10,9 @@ import { AvailabilityPageComponent } from './vehicle-management/pages/availabili
 import { BookingPageComponent } from './booking-reservation/pages/booking-page/booking-page.component';
 import { ConfirmationPageComponent } from './booking-reservation/pages/confirmation-page/confirmation-page.component';
 import { HistoryPageComponent } from './booking-reservation/pages/history-page/history-page.component';
+import { MethodsPageComponent } from './payment/pages/methods-page/methods-page.component';
+import { AlertsPageComponent } from './customer-support/pages/alerts-page/alerts-page.component';
+import { SupportPageComponent } from './customer-support/pages/support-page/support-page.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -24,5 +27,8 @@ export const routes: Routes = [
   { path: 'booking', component: BookingPageComponent },
   { path: 'confirmation', component: ConfirmationPageComponent },
   { path: 'history', component:  HistoryPageComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: 'methods', component: MethodsPageComponent },
+  { path: 'alerts', component: AlertsPageComponent},
+  { path: 'support', component: SupportPageComponent },
+  { path: '**', redirectTo: '/home' },
 ];

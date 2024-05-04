@@ -5,11 +5,13 @@ import { BookingService } from './../../services/booking/booking.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavbarComponent } from '../../../public/components/navbar/navbar.component';
+import { FooterComponent } from '../../../public/components/footer/footer.component';
 
 @Component({
   selector: 'app-history-page',
   standalone: true,
-  imports: [MatPaginator, MatTableModule, HttpClientModule],
+  imports: [MatPaginator, MatTableModule, HttpClientModule, NavbarComponent, FooterComponent],
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css',
 })
@@ -18,7 +20,7 @@ export class HistoryPageComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
   data: any[] = [];
   dataSource = new MatTableDataSource<any>(this.data);
-  
+
   displayedColumns: string[] = [
     'id',
     'vehicleId',
@@ -27,38 +29,39 @@ export class HistoryPageComponent implements OnInit {
     'status',
   ];
 
-  
-
   constructor(private bookingService: BookingService, private router: Router) {}
 
   ngOnInit() {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
-    this.getHistory("1");
+    if(!user) {
+      this.router.navigate(['/login']);
+    }
+    this.getHistory(user.id);
   }
 
   getHistory(userId: any) {
     let bookingData;
-    for (let i = 1; i <= 20; i++) {
-      this.bookingService.getBooking(i).subscribe(
+      this.bookingService.getBookings().subscribe(
         (res: any) => {
-          bookingData = {
-            id: res.id,
-            vehicleId: res.vehicleID,
-            startDate: res.startTime,
-            endDate: res.endTime,
-            status: res.status,
-          };
-
-          if (userId == res.userID) {
-            this.data.push(bookingData);
-            this.dataSource = new MatTableDataSource<any>(this.data);
-            this.dataSource.paginator = this.paginator;
-          }
+          res.forEach((element: any) => {
+            if (element.userID == userId) {
+              bookingData = {
+                id: element.id,
+                vehicleId: element.vehicleID,
+                startDate: element.startTime,
+                endDate: element.endTime,
+                status: element.status,
+              };
+              this.data.push(bookingData);
+              this.dataSource = new MatTableDataSource<any>(this.data);
+              this.dataSource.paginator = this.paginator;
+            }
+          });
         },
         (error) => {
           console.log(error);
         }
       );
-    }
+    
   }
 }

@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 import { SocialAuthService } from "@abacritt/angularx-social-login";
 import { FacebookLoginProvider } from "@abacritt/angularx-social-login";
 import {MatButton} from "@angular/material/button";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-facebook-register',
@@ -14,23 +15,25 @@ import {MatButton} from "@angular/material/button";
   styleUrl: './facebook-register.component.css'
 })
 export class FacebookRegisterComponent implements OnInit {
-  constructor(private authService: SocialAuthService, private usersService: UsersService) { }
+  constructor(private authService: SocialAuthService, private usersService: UsersService, private router: Router) { }
 
   ngOnInit() {
     this.authService.authState.subscribe((user) => {
-      
-      this.usersService.getUsers().subscribe((data: any) => {
-        if (data.filter((u:any) => u.email === user.email).length === 0) {
-          const newUser = {id: String(data.length + 1), email: user.email, firstname: user.name};
-          localStorage.setItem('user', JSON.stringify(newUser));
-          this.usersService.registerUser(newUser).subscribe((data) => {  });
-        }
-        else {
-          localStorage.setItem('user', JSON.stringify(data.filter((u:any) => u.email === user.email)[0]));
-        }
-      });
-      if(user) {
-        window.location.href = '/home';
+      console.log(user);
+      if (user) {
+        this.usersService.getUsers().subscribe((data: any) => {
+          const existingUser = data.find((u: any) => u.email === user.email);
+          if (!existingUser) {
+            const newUser = { id: String(data.length + 1), email: user.email, firstname: user.name };
+            localStorage.setItem('user', JSON.stringify(newUser));
+            this.usersService.registerUser(newUser).subscribe(() => { });
+          } else {
+            localStorage.setItem('user', JSON.stringify(existingUser));
+          }
+          this.router.navigateByUrl('/home');
+          return null;
+        });
+        
       }
     });
   }

@@ -4,6 +4,8 @@ import { RouterLink } from '@angular/router';
 import { MatButton } from '@angular/material/button';
 import { NavbarComponent } from '../../../public/components/navbar/navbar.component';
 import { FooterComponent } from '../../../public/components/footer/footer.component';
+import { Router } from '@angular/router';
+import { SocialAuthService } from '@abacritt/angularx-social-login';
 
 @Component({
   selector: 'app-settings-page',
@@ -16,10 +18,12 @@ import { FooterComponent } from '../../../public/components/footer/footer.compon
 export class SettingsPageComponent implements OnInit {
   user: any;
 
+  constructor(private router: Router, private authService: SocialAuthService) {}
+
   ngOnInit() {
     this.getUser();
     if (!this.user) {
-      window.location.href = '/login';
+      this.router.navigate(['/login']);
     }
   }
 
@@ -30,7 +34,11 @@ export class SettingsPageComponent implements OnInit {
   }
 
   signOut() {
+    this.authService.signOut();
+    setTimeout(() => {
     localStorage.removeItem('user');
-    window.location.href = '/login';
+    
+    this.router.navigate(['/login']);
+    }, 1000);
   }
 }
