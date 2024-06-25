@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatCardModule} from '@angular/material/card'
 import { RouterLink } from '@angular/router';
 import { NavbarComponent } from '../../../public/components/navbar/navbar.component';
@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
   templateUrl: './vehicle-page.component.html',
   styleUrl: './vehicle-page.component.css'
 })
-export class VehiclePageComponent {
+export class VehiclePageComponent implements OnInit{
   vehicles: any = [];
 
   constructor(private vehiclesService: VehiclesService, private router: Router) { }

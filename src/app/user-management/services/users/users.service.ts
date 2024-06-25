@@ -9,11 +9,11 @@ export class UsersService {
 
   baseUrl: string= enviroment.baseURL;
   constructor(private http: HttpClient) { }
-  
+
   getUsers() {
-    return this.http.get(`${this.baseUrl}/user`);
+    return this.http.get(`${this.baseUrl}/users/{username}`);
   }
   registerUser(user: any) {
-    return this.http.post(`${this.baseUrl}/user`, JSON.stringify(user));
+    return this.http.post(`${this.baseUrl}/users`, JSON.stringify(user));
   }
 }
