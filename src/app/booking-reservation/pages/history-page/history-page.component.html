@@ -9,7 +9,7 @@
               <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Id </th>
               <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.id}} </td>
           </ng-container>
-      
+
           <ng-container matColumnDef="vehicleId">
               <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Id Vehiculo </th>
               <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.vehicleId}} </td>
@@ -17,13 +17,13 @@
 
           <ng-container matColumnDef="startDate">
               <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Fecha inicio </th>
-              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.startDate}} </td>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.startTime}} </td>
 
           </ng-container>
 
           <ng-container matColumnDef="endDate">
               <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Fecha fin </th>
-              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.endDate}} </td>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.endTime}} </td>
           </ng-container>
 
           <ng-container matColumnDef="status">
@@ -34,7 +34,7 @@
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-      
+
   </div>
 </main>
 <app-footer></app-footer>

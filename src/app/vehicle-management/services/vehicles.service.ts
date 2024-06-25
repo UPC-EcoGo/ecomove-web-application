@@ -12,7 +12,11 @@ export class VehiclesService {
   baseUrl: string= enviroment.baseURL;
   constructor(private http: HttpClient) { }
 
+
   getVehicles(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/eco-vehicles`);
+
+    const vehicles = this.http.get(`${this.baseUrl}/eco-vehicles`);
+    console.log(vehicles);
+    return vehicles;
   }
 }

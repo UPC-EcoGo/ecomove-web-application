@@ -7,10 +7,8 @@ import { RouterLink } from '@angular/router';
 
 interface Vehicle {
   status: string,
-  location: {
-      latitude: number;
-      longitude: number;
-  };
+  latitude: number;
+  longitude: number;
 }
 
 @Component({
@@ -22,7 +20,7 @@ interface Vehicle {
 })
 export class VehiclesMapComponent implements OnInit {
 
-  vehicles: any = []; 
+  vehicles: any = [];
   center = {lat: 0, lng: 0};
   zoom = 14;
   markerOptions: google.maps.MarkerOptions = {draggable: false};
@@ -36,7 +34,7 @@ export class VehiclesMapComponent implements OnInit {
       this.vehicles = data;
       this.vehicles.forEach((vehicle: Vehicle) => {
         if(vehicle.status === 'disponible')
-          this.markerPositions.push({lat: vehicle.location.latitude, lng: vehicle.location.longitude});
+          this.markerPositions.push({lat: vehicle.latitude, lng: vehicle.longitude});
       });
     });
 
@@ -54,7 +52,7 @@ export class VehiclesMapComponent implements OnInit {
 
   getMarker(position: any): void {
     const marker = this.vehicles.filter((vehicle: Vehicle) => {
-      return vehicle.location.latitude === position.lat && vehicle.location.longitude === position.lng;
+      return vehicle.latitude === position.lat && vehicle.longitude === position.lng;
     });
     localStorage.setItem('vehicle', JSON.stringify(marker[0]));
     this.router.navigate(['/booking']);

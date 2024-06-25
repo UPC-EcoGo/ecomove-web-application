@@ -7,7 +7,7 @@
         @for (vehicle of vehicles; track vehicle) {
             <div aria-label="vehicle info"  class="w-80 h-[390px]">
                 <mat-card class="w-full h-full !rounded-xl" aria-label="vehicle info card">
-                    <img mat-card-image src="{{vehicle.imageURL}}" aria-label="scooter image" class="h-80">
+                    <img src="{{vehicle.imageUrl}}" aria-label="scooter image" class="h-80" alt="">
                     <mat-card-content class="bg-primary-500 !rounded-b-xl object-cover w-full !flex justify-center">
                         <span class="!font-kumbh-sans !font-semibold p-4 justify-center items-center text-center !text-xl w-full">{{vehicle.model}}</span>
                     </mat-card-content>
