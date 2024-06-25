@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="bg-primary-200 ">
+  <h1 class=" text-center uppercase !text-6xl !font-bold p-20">Reseñas y calificación</h1>
+  <div class="flex justify-center align-middle pb-40">
+    <mat-card class="flex w-3/6 p-2 align-middle w-[70%] !bg-primary-400 !rounded-l-xl">
+      <mat-card-header>
+        <div mat-card-avatar class="flex !m-0 mx-2 !items-center !border-black !border-2 justify-center align-middle">
+          <img mat-card-image class="rounded-full !m-0" src="https://sg-res.9appsdownloading.com/sg/res/jpg/7d/86/6a5d6be25f98b16fadb0b158563e-neu2.jpg?x-oss-process=style/mq200" width="35" alt="avatar">
+        </div>
+        <div class="flex items-center mx-4 gap-5  !text-xl pb-4">
+          <mat-card-title>{{user.firstname}}</mat-card-title>
+
+        </div>
+
+      </mat-card-header>
+      <div class="flex w-full">
+        <form class="w-full">
+          <mat-form-field appearance="fill" class="w-full">
+            <textarea class="w-full" matInput placeholder="Escribe tu reseña"></textarea>
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="flex justify-center">
+        <button mat-raised-button type="submit" class="bg-blue-200 hover:bg-blue-200 text-white font-bold py-2 px-4 !rounded-xl" routerLink="/confirmation-review">Subir reseña</button>
+      </div>
+    </mat-card>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+
+
+
