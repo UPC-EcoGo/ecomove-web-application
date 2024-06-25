@@ -2,12 +2,16 @@
 <main class="bg-primary-200 min-h-[70dvh]">
   <h1 class="!text-6xl !text-center !font-bold p-8 !uppercase">Método de Pago</h1>
   <div class="min w-full p-20 flex flex-col gap-10 md:flex-row justify-center !items-center">
-    <mat-card class="w-80 !px-4 !rounded-xl !border-black !border-4 !bg-content2" aria-label="payment card">
-      <img mat-card-image src="../../../../assets/images/card.png" class="p-8" aria-label="paycard image">
-      <mat-card-content class="bg-content2 !rounded-b-xl">
-        <h1 class="!font-kumbh-sans !font-semibold align-middle justify-center text-center !text-3xl p-4 ">Tarjeta</h1>
-      </mat-card-content>
-    </mat-card>
+
+    <a routerLink="/input-card">
+      <mat-card class="w-80 !px-4 !rounded-xl !border-black !border-4 !bg-content2" aria-label="payment card">
+        <img mat-card-image src="../../../../assets/images/card.png" class="p-8" aria-label="paycard image">
+        <mat-card-content class="bg-content2 !rounded-b-xl">
+          <h1 class="!font-kumbh-sans !font-semibold align-middle justify-center text-center !text-3xl p-4 ">Tarjeta</h1>
+        </mat-card-content>
+      </mat-card>
+    </a>
+
     <mat-card class="w-80 !px-4 !rounded-xl !border-black !bg-content2 !border-4" aria-label="other methods">
       <img mat-card-image src="../../../../assets/images/others.png" class="p-8" aria-label="other methods image" width="350">
       <mat-card-content class="bg-content2 !rounded-b-xl">
@@ -16,4 +20,5 @@
     </mat-card>
   </div>
 </main>
+
 <app-footer></app-footer>

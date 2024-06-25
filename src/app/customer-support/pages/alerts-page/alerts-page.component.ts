@@ -6,7 +6,9 @@ import { FooterComponent } from '../../../public/components/footer/footer.compon
 @Component({
   selector: 'app-alerts-page',
   standalone: true,
+
   imports: [MatCard, NavbarComponent, FooterComponent],
+
   templateUrl: './alerts-page.component.html',
   styleUrl: './alerts-page.component.css'
 })
