@@ -13,6 +13,17 @@ import { HistoryPageComponent } from './booking-reservation/pages/history-page/h
 import { MethodsPageComponent } from './payment/pages/methods-page/methods-page.component';
 import { AlertsPageComponent } from './customer-support/pages/alerts-page/alerts-page.component';
 import { SupportPageComponent } from './customer-support/pages/support-page/support-page.component';
+import {InputCardComponent} from "./payment/components/input-card/input-card.component";
+import {CardConfirmationPageComponent} from "./payment/pages/card-confirmation-page/card-confirmation-page.component";
+import {ProblemReportPageComponent} from "./customer-support/pages/problem-report-page/problem-report-page.component";
+import {UpReviewPageComponent} from "./user-management/pages/up-review-page/up-review-page.component";
+import {PreferencesPageComponent} from "./user-management/pages/preferences-page/preferences-page.component";
+import {
+  ConfirmationReviewPageComponent
+} from "./user-management/pages/confirmation-review-page/confirmation-review-page.component";
+import {
+  ConfirmationReportPageComponent
+} from "./customer-support/pages/confirmation-report-page/confirmation-report-page.component";
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,7 +39,14 @@ export const routes: Routes = [
   { path: 'confirmation', component: ConfirmationPageComponent },
   { path: 'history', component:  HistoryPageComponent },
   { path: 'methods', component: MethodsPageComponent },
+  {path: 'preferences', component: PreferencesPageComponent},
   { path: 'alerts', component: AlertsPageComponent},
   { path: 'support', component: SupportPageComponent },
+  { path: 'input-card', component: InputCardComponent},
+  { path: 'confirmation-card-page', component: CardConfirmationPageComponent},
+  { path: 'problem-report', component: ProblemReportPageComponent},
+  { path: 'reviews', component: UpReviewPageComponent},
+  { path: 'confirmation-review', component: ConfirmationReviewPageComponent},
+  {path: 'confirmation-report-page', component: ConfirmationReportPageComponent},
   { path: '**', redirectTo: '/home' },
 ];

@@ -3,6 +3,7 @@ import {MatCard, MatCardContent, MatCardImage} from "@angular/material/card";
 import {NavbarComponent} from "../../../public/components/navbar/navbar.component";
 
 import {FooterComponent} from "../../../public/components/footer/footer.component";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
@@ -13,7 +14,8 @@ import {FooterComponent} from "../../../public/components/footer/footer.componen
     MatCardContent,
     MatCardImage,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    RouterLink
   ],
 
   templateUrl: './methods-page.component.html',
