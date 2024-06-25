@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<main class="flex justify-center flex-col items-center bg-primary-200 py-10 min-w-fit h-[80.1dvh] min-h-fit">
+  <div class="text-center ">
+      <h1 class="!font-kumbh-sans !font-semibold !text-5xl py-5">Historial de Reservas</h1>
+  </div>
+  <div class="w-5/6">
+      <table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8 " aria-labelledby="table">
+          <ng-container matColumnDef="id">
+              <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Id </th>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="vehicleId">
+              <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Id Vehiculo </th>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.vehicleId}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="startDate">
+              <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Fecha inicio </th>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.startDate}} </td>
+
+          </ng-container>
+
+          <ng-container matColumnDef="endDate">
+              <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef> Fecha fin </th>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.endDate}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="status">
+              <th class="!font-kumbh-sans" mat-header-cell *matHeaderCellDef>Estado</th>
+              <td class="!font-kumbh-sans" mat-cell *matCellDef="let element"> {{element.status}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+  </div>
+</main>
+<app-footer></app-footer>
