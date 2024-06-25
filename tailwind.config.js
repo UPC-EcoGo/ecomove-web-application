@@ -15,10 +15,10 @@ module.exports = {
           600: '#8fc6dc',
           700: '#71b6d1',
           800: '#55889d'
-        }
+        },
       },
       fontFamily:{
-          'kumbh-sans': 'Kumbh Sans'
+        'kumbh-sans': 'Kumbh Sans'
       }
     },
   },

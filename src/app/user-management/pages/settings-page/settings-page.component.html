@@ -1,42 +1,41 @@
 <app-navbar></app-navbar>
 <main class="bg-primary-200 flex justify-center flex-col items-center px-6 py-10 gap-10" >
-  <div class="flex flex-col-reverse sm:flex-row gap-6 justify-center items-center">
-    <h1 class="!text-3xl md:!text-4xl lg:!text-5xl !font-bold text-center md:text-start">HOLA, {{user.firstname}}</h1>
-    <a routerLink="/login" aria-label="logout" class="w-full sm:w-auto flex justify-end" (click)="signOut()">
-      <h4 class="text-right align-middle">Cerrar Sesión<mat-icon class="align-middle">exit_to_app</mat-icon></h4>
-    </a>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2  justify-center items-center gap-10">
-    <a routerLink="/reservation" aria-label="reservation link" class="w-80 h-96">
-      <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
-        <img alt="reservation icon" src="../../../../assets/images/reservation.png">
-        <span class="text-3xl !font-kumbh-sans !font-semibold">Reserva</span>
-      </div>
-    </a>
-    <a routerLink="/methods" aria-label="modify link" class="w-80 h-96">
-      <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
-        <img alt="modify icon" src="../../../../assets/images/methods.png">
-        <span class="text-3xl !font-kumbh-sans !font-semibold">Métodos de pago</span>
-      </div>
-    </a>
-    <a routerLink="/history" aria-label="history link" class="w-80 h-96">
-      <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
-        <img alt="history icon" src="../../../../assets/images/history.png">
-        <span class="text-3xl !font-kumbh-sans !font-semibold">Historial</span>
-      </div>
-    </a>
-    <a routerLink="/preferences" aria-label="preferences link" class="w-80 h-96">
-      <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
-        <img alt="preferences icon" src="./../../../assets/images/preferences.png">
-        <span class="text-3xl !font-kumbh-sans !font-semibold">Preferencias</span>
-      </div>
-    </a>
-  </div>
-  <div class=" flex justify-end gap-12">
-    <button routerLink="/support" mat-flat-button class="!bg-primary-800 !px-8 !text-white">Soporte</button>
-    <button routerLink="/alerts" mat-flat-button class="!bg-primary-800 !px-8 !text-white">Alertas</button>
-  </div>
 
-  <button routerLink="/problem-report" mat-flat-button class="!bg-primary-800 !px-8 !text-white">Reporta tu problema</button>
+    <div class="flex flex-col-reverse sm:flex-row gap-6 justify-center items-center">
+        <h1 class="!text-3xl md:!text-4xl lg:!text-5xl !font-bold text-center md:text-start">HOLA, {{user.firstname}}</h1>
+        <a routerLink="/login" aria-label="logout" class="w-full sm:w-auto flex justify-end" (click)="signOut()">
+            <h4 class="text-right align-middle">Cerrar Sesión<mat-icon class="align-middle">exit_to_app</mat-icon></h4>
+        </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2  justify-center items-center gap-10">
+        <a routerLink="/reservation" aria-label="reservation link" class="w-80 h-96">
+            <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
+                <img alt="reservation icon" src="../../../../assets/images/reservation.png">
+                <span class="text-3xl !font-kumbh-sans !font-semibold">Reserva</span>
+            </div>
+        </a>
+        <a routerLink="/methods" aria-label="modify link" class="w-80 h-96">
+            <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
+                <img alt="modify icon" src="../../../../assets/images/modify.png">
+                <span class="text-3xl !font-kumbh-sans !font-semibold">Modificar</span>
+            </div>
+        </a>
+        <a routerLink="/history" aria-label="history link" class="w-80 h-96">
+            <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
+                <img alt="history icon" src="../../../../assets/images/history.png">
+                <span class="text-3xl !font-kumbh-sans !font-semibold">Historial</span>
+            </div>
+        </a>
+        <a aria-label="preferences link" class="w-80 h-96">
+            <div class="border-black border-4 rounded-xl w-full h-full bg-primary-400 flex flex-col justify-center items-center gap-7">
+                <img alt="preferences icon" src="./../../../assets/images/preferences.png">
+                <span class="text-3xl !font-kumbh-sans !font-semibold">Preferencias</span>
+            </div>
+        </a>
+    </div>
+    <div class=" flex justify-end gap-12">
+        <button routerLink="/support" mat-flat-button class="!bg-primary-800 !px-8 !text-white">Soporte</button>
+        <button routerLink="/alerts" mat-flat-button class="!bg-primary-800 !px-8 !text-white">Alertas</button>
+    </div>
 </main>
 <app-footer></app-footer>

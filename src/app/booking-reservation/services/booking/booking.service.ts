@@ -19,7 +19,7 @@ export class BookingService {
   }
 
   addBooking(booking: any) {
-    return this.http.post(`${this.baseURL}/booking`, JSON.stringify(booking));
+    return this.http.post(`${this.baseURL}/booking`, (booking));
   }
 }
 

@@ -5,8 +5,6 @@ import {MatIcon} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
-import {FooterComponent} from "../../../public/components/footer/footer.component";
-import {NavbarComponent} from "../../../public/components/navbar/navbar.component";
 
 @Component({
   selector: 'app-input-card',
@@ -17,9 +15,7 @@ import {NavbarComponent} from "../../../public/components/navbar/navbar.componen
     MatIcon,
     MatInputModule,
     MatButtonModule,
-    RouterLink,
-    FooterComponent,
-    NavbarComponent
+    RouterLink
   ],
   templateUrl: './input-card.component.html',
   styleUrl: './input-card.component.css'

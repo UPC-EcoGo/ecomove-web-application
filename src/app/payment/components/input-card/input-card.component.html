@@ -1,21 +1,32 @@
-<app-navbar></app-navbar>
-<main class="bg-primary-200 min-h-[70dvh]">
-  <h1 class="!text-6xl !text-center !font-bold p-8 !uppercase">Método de Pago</h1>
-  <div class="min w-full p-20 flex flex-col gap-10 md:flex-row justify-center !items-center">
-    <a routerLink="/input-card">
-      <mat-card class="w-80 !px-4 !rounded-xl !border-black !border-4 !bg-content2" aria-label="payment card">
-        <img mat-card-image src="../../../../assets/images/card.png" class="p-8" aria-label="paycard image">
-        <mat-card-content class="bg-content2 !rounded-b-xl">
-          <h1 class="!font-kumbh-sans !font-semibold align-middle justify-center text-center !text-3xl p-4 ">Tarjeta</h1>
-        </mat-card-content>
-      </mat-card>
-    </a>
-    <mat-card class="w-80 !px-4 !rounded-xl !border-black !bg-content2 !border-4" aria-label="other methods">
-      <img mat-card-image src="../../../../assets/images/others.png" class="p-8" aria-label="other methods image" width="350">
-      <mat-card-content class="bg-content2 !rounded-b-xl">
-        <h1 class="!font-kumbh-sans !font-semibold  align-middle justify-center text-center !text-3xl p-4 ">Otros medios</h1>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</main>
-<app-footer></app-footer>
+
+<div class="flex flex-col items-center justify-center min-h-screen w-full">
+  <h1 class="!text-4xl !font-semibold mb-8 text-center">INGRESE DATOS DE LA TARJETA</h1>
+
+    <div class="mb-8 mt-10 bg-blue-200 py-10 px-32 w-[70%] !rounded-xl">
+      <form class="flex flex-col items-center justify-center  ">
+        <mat-form-field class="w-[90%] mb-4">
+          <mat-label>Nro. de tarjeta</mat-label>
+          <input matInput placeholder="Ingrese el número de tarjeta">
+          <mat-icon matPrefix>credit_card</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-[90%] mb-4">
+          <mat-label>Fecha de vencimiento</mat-label>
+          <input matInput placeholder="MM/AA">
+          <mat-icon matPrefix>event</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-[90%] mb-4">
+          <mat-label>CVV</mat-label>
+          <input matInput placeholder="Ingrese el CVV">
+          <mat-icon matPrefix>lock</mat-icon>
+        </mat-form-field>
+
+        <div class="flex justify-center"> <!-- Contenedor para centrar el botón -->
+          <button mat-raised-button type="submit" class="bg-blue-200 hover:bg-blue-200 text-white font-bold py-2 px-4 !rounded-xl">Siguiente</button>
+        </div>
+      </form>
+    </div>
+
+</div>
+
