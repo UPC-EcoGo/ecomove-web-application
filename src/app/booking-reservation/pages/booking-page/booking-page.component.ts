@@ -45,7 +45,10 @@ export class BookingPageComponent implements OnInit {
       this.bookingService.getBookings().subscribe((data: any) => {
         const user = JSON.parse(localStorage.getItem('user') || '{}');
         const reservation = JSON.parse(localStorage.getItem('reservation') || '{}');
-        const booking = {id: String(data.length + 1), userID: user.id, vehicleID: this.vehicle.id, status: 'confirmed', startTime: reservation.startDate, endTime: new Date()}
+        const actualDate = reservation.startDate;
+        const actualTime = new Date(actualDate);
+        const endTime = new Date(actualTime.setDate(actualTime.getDate() + 1));
+        const booking = {userId: user.id, vehicleId: this.vehicle.id, startTime: actualTime, endTime: endTime}
         this.bookingService.addBooking(booking).subscribe(((book: any) => {}));
         console.log('Booking added!');
       });

@@ -12,13 +12,13 @@ export class UsersService {
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/users/{username}`);
+    return this.http.get(`${this.baseUrl}/users`);
   }
 
   getUser(username: string | null): Observable<any> {
     return this.http.get(`${this.baseUrl}/users/username/${username}`);
   }
   registerUser(user: any): Observable<any>{
-    return this.http.post(`${this.baseUrl}/users`, user);
+    return this.http.post(`${this.baseUrl}/users`, (user));
   }
 }
