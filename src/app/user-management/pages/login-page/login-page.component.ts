@@ -3,6 +3,7 @@ import {LoginFormComponent} from "../../components/login-form/login-form.compone
 import {GoogleRegisterComponent} from "../../components/google-register/google-register.component";
 import {FacebookRegisterComponent} from "../../components/facebook-register/facebook-register.component";
 import {FooterComponent} from '../../../public/components/footer/footer.component';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-login-page',
@@ -11,7 +12,8 @@ import {FooterComponent} from '../../../public/components/footer/footer.componen
     LoginFormComponent,
     GoogleRegisterComponent,
     FacebookRegisterComponent,
-    FooterComponent
+    FooterComponent,
+    RouterLink
   ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'

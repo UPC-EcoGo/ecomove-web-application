@@ -44,15 +44,14 @@ export class LoginFormComponent {
   }
 
   logIn() {
-    this.usersService.getUsers().subscribe((data: any) => {
-      const user = data.find((u: any) => u.username === this.username.value);
-      if (user && user.password === this.password.value) {
-        localStorage.setItem('user', JSON.stringify(user));
+
+    this.usersService.getUser(this.username.value).subscribe((data: any) => {
+      if (data && data.password === this.password.value) {
+        localStorage.setItem('user', JSON.stringify(data));
         this.router.navigate(['/home']);
-      }
-      else {
+      }else
+      {
         alert('Usuario o contraseña incorrectos');
       }
   });
-  }
-}
+}}

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { enviroment } from "../../../../enviroments/enviroment";
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +11,16 @@ export class BookingService {
 
   constructor(private http: HttpClient) { }
 
-  getBookings() {
-    return this.http.get(`${this.baseURL}/booking`);
+  getBookings(): Observable<any>{
+    return this.http.get(`${this.baseURL}/bookings`);
   }
 
-  getBooking(index: any) {
-    return this.http.get(`${this.baseURL}/booking/${index}`);
+  getBooking(index: any): Observable<any>{
+    return this.http.get(`${this.baseURL}/bookings/${index}`);
   }
 
-  addBooking(booking: any) {
-    return this.http.post(`${this.baseURL}/booking`, (booking));
+  addBooking(booking: any): Observable<any>{
+    return this.http.post(`${this.baseURL}/bookings`, (booking));
   }
 }
 
