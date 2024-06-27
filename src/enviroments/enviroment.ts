@@ -1,4 +1,4 @@
 export const enviroment = {
   production: false,
-  baseURL: 'https://ecomove-fake-api.onrender.com'
+  baseURL: 'https://ecomove-web.onrender.com/api/v1'
 };

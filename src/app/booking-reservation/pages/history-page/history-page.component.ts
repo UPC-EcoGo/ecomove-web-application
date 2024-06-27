@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { BookingService } from './../../services/booking/booking.service';
+import { BookingService } from '../../services/booking/booking.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
@@ -44,14 +44,15 @@ export class HistoryPageComponent implements OnInit {
       this.bookingService.getBookings().subscribe(
         (res: any) => {
           res.forEach((element: any) => {
-            if (element.userID == userId) {
+            if (element.userId == userId) {
               bookingData = {
-                id: element.id,
-                vehicleId: element.vehicleID,
-                startDate: element.startTime,
-                endDate: element.endTime,
-                status: element.status,
+                id: element.bookingId,
+                vehicleId: element.vehicleId,
+                startDate:new Date(element.startTime).toLocaleString(),
+                endDate: new Date(element.endTime).toLocaleString(),
+                status: element.status
               };
+              console.log(bookingData.startDate);
               this.data.push(bookingData);
               this.dataSource = new MatTableDataSource<any>(this.data);
               this.dataSource.paginator = this.paginator;
@@ -62,6 +63,6 @@ export class HistoryPageComponent implements OnInit {
           console.log(error);
         }
       );
-    
+
   }
 }

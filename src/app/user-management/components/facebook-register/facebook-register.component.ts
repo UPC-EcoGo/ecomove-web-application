@@ -24,7 +24,7 @@ export class FacebookRegisterComponent implements OnInit {
         this.usersService.getUsers().subscribe((data: any) => {
           const existingUser = data.find((u: any) => u.email === user.email);
           if (!existingUser) {
-            const newUser = { id: String(data.length + 1), email: user.email, firstname: user.name };
+            const newUser = { username: user.name, email: user.email, firstName: user.name, lastName: 'socialAccount', password: 'socialAccount'  };
             localStorage.setItem('user', JSON.stringify(newUser));
             this.usersService.registerUser(newUser).subscribe(() => { });
           } else {
@@ -33,7 +33,7 @@ export class FacebookRegisterComponent implements OnInit {
           this.router.navigateByUrl('/home');
           return null;
         });
-        
+
       }
     });
   }

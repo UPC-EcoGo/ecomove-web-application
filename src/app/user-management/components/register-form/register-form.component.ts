@@ -4,6 +4,8 @@ import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angu
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { merge } from 'rxjs';
+import {Router, RouterLink} from "@angular/router";
+import { UsersService } from '../../services/users/users.service';
 
 @Component({
   selector: 'app-register-form',
@@ -12,7 +14,8 @@ import { merge } from 'rxjs';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLink
   ],
   templateUrl: './register-form.component.html',
   styleUrl: './register-form.component.css'
@@ -33,7 +36,7 @@ export class RegisterFormComponent {
   passwordErrorMessage = '';
   checkPasswordErrorMessage = '';
 
-  constructor() {
+  constructor(private usersService: UsersService, private router: Router) {
     merge(this.names.statusChanges, this.names.valueChanges)
       .pipe(takeUntilDestroyed())
       .subscribe(() => this.updateNamesErrorMessage());
@@ -57,6 +60,8 @@ export class RegisterFormComponent {
     merge(this.checkPassword.statusChanges, this.checkPassword.valueChanges)
       .pipe(takeUntilDestroyed())
       .subscribe(() => this.updateCheckPasswordErrorMessage());
+
+
   }
 
   updateNamesErrorMessage() {
@@ -116,6 +121,26 @@ export class RegisterFormComponent {
       this.checkPasswordErrorMessage = 'No es una contraseña válida';
     } else {
       this.checkPasswordErrorMessage = '';
+    }
+  }
+
+  register() {
+    if (this.names.valid && this.lastNames.valid && this.username.valid && this.email.valid && this.password.valid && this.checkPassword.valid) {
+      this.usersService.getUsers().subscribe((users: any) => {
+        if (users.find((user: any) => user.email === this.email.value)) {
+          this.usernameErrorMessage = 'El nombre de usuario ya está en uso';
+        } else {
+          this.usersService.registerUser({
+            firstName: this.names.value,
+            lastName: this.lastNames.value,
+            username: this.username.value,
+            email: this.email.value,
+            password: this.password.value
+          }).subscribe(() => {
+            this.router.navigate(['/login']);
+          });
+        }
+      });
     }
   }
 }
